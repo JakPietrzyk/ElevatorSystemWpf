@@ -1,0 +1,32 @@
+﻿<Window x:Class="elevatorFront.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:elevatorFront"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,333,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame0"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,259,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,28,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,28,0,0" VerticalAlignment="Top" Name="floor4up" Click="floor4up_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,61,0,0" VerticalAlignment="Top" Name="floor4down" Click="floor4down_Click" />
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,105,0,0" VerticalAlignment="Top" Name="floor3up" Click="floor3up_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,137,0,0" VerticalAlignment="Top" Name="floor3down" Click="floor3down_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,179,0,0" VerticalAlignment="Top" Name="floor2up" Click="floor2up_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,212,0,0" VerticalAlignment="Top" Name="floor2down" Click="floor2down_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,259,0,0" VerticalAlignment="Top" Name="floor1up" Click="floor1up_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,292,0,0" VerticalAlignment="Top" Name="floor1down" Click="floor1down_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,333,0,0" VerticalAlignment="Top" Name="floor0up" Click="floor0up_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="88,366,0,0" VerticalAlignment="Top" Name="floor0down" Click="floor0down_clik"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="264,28,0,0" VerticalAlignment="Top" Name="startElevator" Click="startElevator_Click"/>
+        <CheckBox HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Name="floor4CheckBox" Click="floor4CheckBox_Click"/>
+        <CheckBox HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Name="floor3CheckBox" Click="floor3CheckBox_Click"/>
+        <CheckBox HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Name="floor2CheckBox" Click="floor2CheckBox_Click"/>
+        <CheckBox HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Name="floor1CheckBox" Click="floor1CheckBox_Click"/>
+        <CheckBox HorizontalAlignment="Left" Margin="11,352,0,0" VerticalAlignment="Top" Name="floor0CheckBox" Click="floor0CheckBox_Click"/>
+    </Grid>
+</Window>
