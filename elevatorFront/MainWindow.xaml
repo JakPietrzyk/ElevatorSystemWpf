@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,333,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame0"/>
-        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,259,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
-        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
-        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
-        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,28,0,0" Stroke="Black" VerticalAlignment="Top" Width="36"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,333,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame0" />
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,259,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame1"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame2"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame3"/>
+        <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,28,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame4"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="88,28,0,0" VerticalAlignment="Top" Name="floor4up" Click="floor4up_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="88,61,0,0" VerticalAlignment="Top" Name="floor4down" Click="floor4down_Click" />
         <Button Content="Button" HorizontalAlignment="Left" Margin="88,105,0,0" VerticalAlignment="Top" Name="floor3up" Click="floor3up_Click"/>
@@ -28,5 +28,10 @@
         <CheckBox HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Name="floor2CheckBox" Click="floor2CheckBox_Click"/>
         <CheckBox HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Name="floor1CheckBox" Click="floor1CheckBox_Click"/>
         <CheckBox HorizontalAlignment="Left" Margin="11,352,0,0" VerticalAlignment="Top" Name="floor0CheckBox" Click="floor0CheckBox_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run Language="pl-pl" Text="0"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run Language="pl-pl" Text="1"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"><Run Language="pl-pl" Text="2"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run Language="pl-pl" Text="3"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run Language="pl-pl" Text="4"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
     </Grid>
 </Window>
