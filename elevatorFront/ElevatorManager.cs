@@ -1,4 +1,5 @@
 ﻿using elevatorFront;
+using elevatorFront.Buttons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,7 +88,21 @@ namespace ElevatorSystemConsole
                 }
             }
         }
-
+        public void AddSingleFloor(int floor,string direction)
+        {
+            if (direction == "up")
+            {
+                floorUp.Add(floor);
+                floorUp.Sort();
+            }
+            else
+            {
+                floorDown.Add(floor);
+                floorDown.Sort();
+                floorDown.Reverse();
+            }
+            isEmpty = false;
+        }
         public void AddFloor(PersonFloorRequest pfr)
         {
             if (pfr.direction == "up")
@@ -109,6 +124,14 @@ namespace ElevatorSystemConsole
         {
             PersonFloorRequest pfr = new PersonFloorRequest(current, destination);
             AddFloor(pfr);
+        }
+        public void AddRequestFromOutsideButton(OutsideButton floor,string direction)
+        {
+            AddSingleFloor(floor.currentFloor,direction);
+        }
+        public void AddRequestFromInsideButton(InsideButton floor,string direction)
+        {
+            AddSingleFloor(floor.destinationFloor,direction);
         }
         public void MakeStep()
         {

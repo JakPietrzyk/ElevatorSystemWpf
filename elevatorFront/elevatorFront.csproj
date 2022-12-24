@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Buttons\InsideButton.cs" />
+    <Compile Include="Buttons\OutsideButton.cs" />
     <Compile Include="Elevator.cs" />
     <Compile Include="ElevatorFunctions.cs" />
     <Compile Include="ElevatorManager.cs" />

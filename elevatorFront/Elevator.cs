@@ -55,30 +55,30 @@ namespace ElevatorSystemConsole
         }
         public void NewRun()
         {
-            if (floorQueue.Count == 0 && currentFloor == nextFloor || direction == "idle")
-            {
-                direction = "idle";
-                isRunning = false;
-                nextFloor = idleFloor;
-                if (currentFloor != nextFloor)
-                {
-                    Console.WriteLine("Nothing to do going back to idle floor");
-                }
-                if (currentFloor != nextFloor)
-                {
-                    if (currentFloor > nextFloor)
-                    {
-                        currentFloor--;
-                    }
-                    else
-                    {
-                        currentFloor++;
-                    }
-                    Thread.Sleep(sleep);
-                    Console.WriteLine("At {0} floor, next floor: {1} | direction {2} || Id {3}", currentFloor, nextFloor, direction, Id);
-                }
-            }
-            else if (direction == "up")
+            //if (floorQueue.Count == 0 && currentFloor == nextFloor || direction == "idle")
+            //{
+            //    direction = "idle";
+            //    isRunning = false;
+            //    nextFloor = idleFloor;
+            //    if (currentFloor != nextFloor)
+            //    {
+            //        Console.WriteLine("Nothing to do going back to idle floor");
+            //    }
+            //    if (currentFloor != nextFloor)
+            //    {
+            //        if (currentFloor > nextFloor)
+            //        {
+            //            currentFloor--;
+            //        }
+            //        else
+            //        {
+            //            currentFloor++;
+            //        }
+            //        Thread.Sleep(sleep);
+            //        Console.WriteLine("At {0} floor, next floor: {1} | direction {2} || Id {3}", currentFloor, nextFloor, direction, Id);
+            //    }
+            //}
+            if (direction == "up")
             {
 
                 Console.WriteLine("At {0} floor, next floor: {1} | direction {2} || Id {3}", currentFloor, nextFloor, direction, Id);

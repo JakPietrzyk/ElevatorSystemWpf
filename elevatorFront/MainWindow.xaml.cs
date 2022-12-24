@@ -39,26 +39,30 @@ namespace elevatorFront
             ElevatorFrame2.Fill = Brushes.White;
             ElevatorFrame3.Fill = Brushes.White;
             ElevatorFrame4.Fill = Brushes.White;
-
+            Brush brush = Brushes.Blue;
+            if (elevatorManager.elevators[0].nextFloor == floor)
+            {
+                brush = Brushes.Red;
+            }
             if (floor == 0)
             {
-                ElevatorFrame0.Fill = Brushes.Blue;
+                ElevatorFrame0.Fill = brush;
             }
             if(floor == 1)
             {
-                ElevatorFrame1.Fill = Brushes.Blue;
+                ElevatorFrame1.Fill = brush;
             }
             if(floor==2)
             {
-                ElevatorFrame2.Fill = Brushes.Blue;
+                ElevatorFrame2.Fill = brush;
             }
             if (floor == 3)
             {
-                ElevatorFrame3.Fill = Brushes.Blue;
+                ElevatorFrame3.Fill = brush;
             }
             if (floor == 4)
             {
-                ElevatorFrame4.Fill = Brushes.Blue;
+                ElevatorFrame4.Fill = brush;
             }
         }
         private void startElevator_Click(object sender, RoutedEventArgs e)
@@ -66,274 +70,114 @@ namespace elevatorFront
             colorElevator(elevatorManager.elevators[0].currentFloor);
             Thread.Sleep(500);
             elevatorManager.MakeStep();
-            
-
         }
 
         private void floor0down_clik(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 4);
-            }
+            elevatorManager.AddSingleFloor(0, "down");
         }
 
         private void floor0up_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(0, 4);
-            }
+            elevatorManager.AddSingleFloor(0, "up");
         }
 
         private void floor1down_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 4);
-            }
+            elevatorManager.AddSingleFloor(1, "down");
         }
 
         private void floor1up_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(1, 4);
-            }
+            elevatorManager.AddSingleFloor(1, "up");
         }
 
         private void floor2down_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 4);
-            }
+            elevatorManager.AddSingleFloor(2, "down");
         }
 
         private void floor2up_Click(object sender, RoutedEventArgs e)
         {
-            if(floor0CheckBox.IsChecked==true)
-            {
-                elevatorManager.AddRequestFromButton(2, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(2, 4);
-            }
-
-
-
+            elevatorManager.AddSingleFloor(2, "up");
         }
 
         private void floor3down_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 4);
-            }
+            elevatorManager.AddSingleFloor(3, "down");
         }
 
         private void floor3up_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(3, 4);
-            }
+            elevatorManager.AddSingleFloor(3, "up");
         }
         private void floor4down_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 4);
-            }
+            elevatorManager.AddSingleFloor(4, "down");
         }
         private void floor4up_Click(object sender, RoutedEventArgs e)
         {
-            if (floor0CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 0);
-            }
-            if (floor1CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 1);
-            }
-            if (floor2CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 2);
-            }
-            if (floor3CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 3);
-            }
-            if (floor4CheckBox.IsChecked == true)
-            {
-                elevatorManager.AddRequestFromButton(4, 4);
-            }
+            elevatorManager.AddSingleFloor(4, "up");
         }
 
         private void floor0CheckBox_Click(object sender, RoutedEventArgs e)
         {
-
+            if (elevatorManager.elevators[0].direction == "up")
+            {
+                elevatorManager.AddSingleFloor(0, "up");
+            }
+            else
+            {
+                elevatorManager.AddSingleFloor(0, "down");
+            }
         }
 
         private void floor1CheckBox_Click(object sender, RoutedEventArgs e)
         {
-
+            if (elevatorManager.elevators[0].direction == "up")
+            {
+                elevatorManager.AddSingleFloor(1, "up");
+            }
+            else
+            {
+                elevatorManager.AddSingleFloor(1, "down");
+            }
         }
 
         private void floor2CheckBox_Click(object sender, RoutedEventArgs e)
         {
-
+            if (elevatorManager.elevators[0].direction == "up")
+            {
+                elevatorManager.AddSingleFloor(2, "up");
+            }
+            else
+            {
+                elevatorManager.AddSingleFloor(2, "down");
+            }
         }
 
         private void floor3CheckBox_Click(object sender, RoutedEventArgs e)
         {
-
+            if (elevatorManager.elevators[0].direction == "up")
+            {
+                elevatorManager.AddSingleFloor(3, "up");
+            }
+            else
+            {
+                elevatorManager.AddSingleFloor(3, "down");
+            }
         }
 
         private void floor4CheckBox_Click(object sender, RoutedEventArgs e)
         {
-
+            if (elevatorManager.elevators[0].direction == "up")
+            {
+                elevatorManager.AddSingleFloor(4, "up");
+            }
+            else
+            {
+                elevatorManager.AddSingleFloor(4, "down");
+            }
         }
     }
 }
