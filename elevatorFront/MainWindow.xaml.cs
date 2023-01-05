@@ -34,6 +34,8 @@ namespace elevatorFront
 
         public void colorElevator(int floor)
         {
+            CurrentFloorTextBlock.Text =elevatorManager.elevators[0].currentFloor.ToString() + "->" + elevatorManager.elevators[0].nextFloor.ToString();
+            
             ElevatorFrame0.Fill = Brushes.White;
             ElevatorFrame1.Fill = Brushes.White;
             ElevatorFrame2.Fill = Brushes.White;

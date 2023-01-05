@@ -12,17 +12,17 @@
         <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,179,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame2"/>
         <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,104,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame3"/>
         <Rectangle HorizontalAlignment="Left" Height="53" Margin="32,28,0,0" Stroke="Black" VerticalAlignment="Top" Width="36" Name="ElevatorFrame4"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,28,0,0" VerticalAlignment="Top" Name="floor4up" Click="floor4up_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,61,0,0" VerticalAlignment="Top" Name="floor4down" Click="floor4down_Click" />
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,105,0,0" VerticalAlignment="Top" Name="floor3up" Click="floor3up_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,137,0,0" VerticalAlignment="Top" Name="floor3down" Click="floor3down_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,179,0,0" VerticalAlignment="Top" Name="floor2up" Click="floor2up_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,212,0,0" VerticalAlignment="Top" Name="floor2down" Click="floor2down_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,259,0,0" VerticalAlignment="Top" Name="floor1up" Click="floor1up_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,292,0,0" VerticalAlignment="Top" Name="floor1down" Click="floor1down_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,333,0,0" VerticalAlignment="Top" Name="floor0up" Click="floor0up_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="88,366,0,0" VerticalAlignment="Top" Name="floor0down" Click="floor0down_clik"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="264,28,0,0" VerticalAlignment="Top" Name="startElevator" Click="startElevator_Click"/>
+        <Button Content="^" FontSize="20" HorizontalAlignment="Left" Margin="88,28,0,0" VerticalAlignment="Top" Name="floor4up" Click="floor4up_Click"/>
+        <Button Content="v" FontSize="22" HorizontalAlignment="Left" Margin="88,61,0,0" VerticalAlignment="Top" Name="floor4down" Click="floor4down_Click" />
+        <Button Content="^" FontSize="20" HorizontalAlignment="Left" Margin="88,105,0,0" VerticalAlignment="Top" Name="floor3up" Click="floor3up_Click"/>
+        <Button Content="v" FontSize="22" HorizontalAlignment="Left" Margin="88,137,0,0" VerticalAlignment="Top" Name="floor3down" Click="floor3down_Click"/>
+        <Button Content="^" FontSize="20" HorizontalAlignment="Left" Margin="88,179,0,0" VerticalAlignment="Top" Name="floor2up" Click="floor2up_Click"/>
+        <Button Content="v" FontSize="22" HorizontalAlignment="Left" Margin="88,212,0,0" VerticalAlignment="Top" Name="floor2down" Click="floor2down_Click"/>
+        <Button Content="^" FontSize="20" HorizontalAlignment="Left" Margin="88,259,0,0" VerticalAlignment="Top" Name="floor1up" Click="floor1up_Click"/>
+        <Button Content="v" FontSize="22" HorizontalAlignment="Left" Margin="88,292,0,0" VerticalAlignment="Top" Name="floor1down" Click="floor1down_Click"/>
+        <Button Content="^" FontSize="20" HorizontalAlignment="Left" Margin="88,333,0,0" VerticalAlignment="Top" Name="floor0up" Click="floor0up_Click"/>
+        <Button Content="v" FontSize="22" HorizontalAlignment="Left" Margin="88,366,0,0" VerticalAlignment="Top" Name="floor0down" Click="floor0down_clik"/>
+        <Button Content="NextStep" HorizontalAlignment="Left" Margin="264,28,0,0" VerticalAlignment="Top" Name="startElevator" Click="startElevator_Click"/>
         <CheckBox HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Name="floor4CheckBox" Click="floor4CheckBox_Click"/>
         <CheckBox HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Name="floor3CheckBox" Click="floor3CheckBox_Click"/>
         <CheckBox HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" Name="floor2CheckBox" Click="floor2CheckBox_Click"/>
@@ -33,5 +33,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="45,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"><Run Language="pl-pl" Text="2"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="45,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run Language="pl-pl" Text="3"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="45,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"><Run Language="pl-pl" Text="4"/><LineBreak/><Run Language="pl-pl"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="271,58,0,0" TextWrapping="Wrap" Text="0->0" VerticalAlignment="Top" Name="CurrentFloorTextBlock" />
     </Grid>
 </Window>
